@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../component/Header";
+import ShowCase from "../component/ShowCase";
 import Footer from "../component/Footer";
 import styles from "../styles/Layout.module.css";
 
@@ -12,6 +13,7 @@ export default function Layout({ title, description, keyword, children }) {
         <meta name="keyword" content={keyword} />
       </Head>
       <Header />
+      <ShowCase />
 
       <div className={styles.container}>{children}</div>
 

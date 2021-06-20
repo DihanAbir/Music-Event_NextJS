@@ -1,7 +1,3 @@
-export default function indexPage() {
-  return (
-    <div>
-      <p>index from event pages </p>
-    </div>
-  );
-}
+export default (req, res) => {
+  res.status(200).json({ name: "dihan abir " });
+};
